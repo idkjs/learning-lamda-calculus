@@ -1,0 +1,11 @@
+(** @canonical Dune__exe.Lambda *)
+module Lambda = Dune__exe__Lambda
+
+(** @canonical Dune__exe.Parse *)
+module Parse = Dune__exe__Parse
+
+(** @canonical Dune__exe.Result *)
+module Result = Dune__exe__Result
+
+(** @canonical Dune__exe.Tal *)
+module Tal = Dune__exe__Tal
