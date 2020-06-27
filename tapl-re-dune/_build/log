@@ -1,11 +1,11 @@
-# dune exec ./tal.exe
+# dune build @install --root .
 # OCAMLPARAM: unset
 # Workspace root:
 # /Users/mandalarian/Github/learning-lamda-calculus/tapl-re-dune
-$ /usr/local/bin/nproc > /var/folders/rt/7lc5vcw16459dszl8djk35fh0000gn/T/dune17df8c.output 2> /dev/null
+$ /usr/local/bin/nproc > /var/folders/rt/7lc5vcw16459dszl8djk35fh0000gn/T/duneaf4e24.output 2> /dev/null
 # Auto-detected concurrency: 4
 # disable binary cache
-$ /Users/mandalarian/.opam/4.08.1/bin/ocamlc.opt -config > /var/folders/rt/7lc5vcw16459dszl8djk35fh0000gn/T/dune63345e.output
+$ /Users/mandalarian/.opam/4.08.1/bin/ocamlc.opt -config > /var/folders/rt/7lc5vcw16459dszl8djk35fh0000gn/T/dune167b00.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -35,8 +35,6 @@ $ /Users/mandalarian/.opam/4.08.1/bin/ocamlc.opt -config > /var/folders/rt/7lc5v
 #            "/Users/mandalarian/Github/learning-lamda-calculus/tapl-re-dune/_build/install/default/lib"
 #        ; "OCAMLTOP_INCLUDE_PATH" :
 #            "/Users/mandalarian/Github/learning-lamda-calculus/tapl-re-dune/_build/install/default/lib/toplevel"
-#        ; "OCAML_COLOR" : "always"
-#        ; "OPAMCOLOR" : "always"
 #        }
 #  ; findlib_path = [ External "/Users/mandalarian/.opam/4.08.1/lib" ]
 #  ; arch_sixtyfour = true
@@ -107,28 +105,3 @@ $ /Users/mandalarian/.opam/4.08.1/bin/ocamlc.opt -config > /var/folders/rt/7lc5v
 #      ; windows_unicode = false
 #      }
 #  }
-# Workspace root:
-# /Users/mandalarian/Github/learning-lamda-calculus/tapl-re-dune
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I .tal.eobjs/byte -no-alias-deps -opaque -o .tal.eobjs/byte/dune__exe.cmo -c -impl .tal.eobjs/dune__exe.ml-gen)
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/refmt --print binary parse.rei) > _build/default/parse.rei.mli
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/refmt --print binary lambda.re) > _build/default/lambda.re.ml
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/refmt --print binary parse.re) > _build/default/parse.re.ml
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamldep.opt -modules -intf parse.rei.mli) > _build/default/.tal.eobjs/parse.rei.mli.d
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamldep.opt -modules -impl lambda.re.ml) > _build/default/.tal.eobjs/lambda.re.ml.d
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamldep.opt -modules -impl parse.re.ml) > _build/default/.tal.eobjs/parse.re.ml.d
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I .tal.eobjs/byte -I .tal.eobjs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o .tal.eobjs/native/dune__exe.cmx -c -impl .tal.eobjs/dune__exe.ml-gen)
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/refmt --print binary result.rei) > _build/default/result.rei.mli
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/refmt --print binary result.re) > _build/default/result.re.ml
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamldep.opt -modules -intf result.rei.mli) > _build/default/.tal.eobjs/result.rei.mli.d
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/refmt --print binary tal.re) > _build/default/tal.re.ml
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamldep.opt -modules -impl result.re.ml) > _build/default/.tal.eobjs/result.re.ml.d
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamldep.opt -modules -impl tal.re.ml) > _build/default/.tal.eobjs/tal.re.ml.d
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .tal.eobjs/byte -no-alias-deps -opaque -open Dune__exe -o .tal.eobjs/byte/dune__exe__Result.cmi -c -intf result.rei.mli)
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .tal.eobjs/byte -no-alias-deps -opaque -open Dune__exe -o .tal.eobjs/byte/dune__exe__Lambda.cmo -c -impl lambda.re.ml)
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .tal.eobjs/byte -no-alias-deps -opaque -open Dune__exe -o .tal.eobjs/byte/dune__exe__Parse.cmi -c -intf parse.rei.mli)
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .tal.eobjs/byte -I .tal.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o .tal.eobjs/native/dune__exe__Result.cmx -c -impl result.re.ml)
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .tal.eobjs/byte -no-alias-deps -opaque -open Dune__exe -o .tal.eobjs/byte/dune__exe__Tal.cmo -c -impl tal.re.ml)
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .tal.eobjs/byte -I .tal.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o .tal.eobjs/native/dune__exe__Tal.cmx -c -impl tal.re.ml)
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .tal.eobjs/byte -I .tal.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o .tal.eobjs/native/dune__exe__Lambda.cmx -c -impl lambda.re.ml)
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .tal.eobjs/byte -I .tal.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o .tal.eobjs/native/dune__exe__Parse.cmx -c -impl parse.re.ml)
-$ (cd _build/default && /Users/mandalarian/.opam/4.08.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o tal.exe .tal.eobjs/native/dune__exe.cmx .tal.eobjs/native/dune__exe__Result.cmx .tal.eobjs/native/dune__exe__Lambda.cmx .tal.eobjs/native/dune__exe__Parse.cmx .tal.eobjs/native/dune__exe__Tal.cmx)
